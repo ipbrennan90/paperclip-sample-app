@@ -1,0 +1,8 @@
+<h1> Product <%= @product(params[:id]) %>
+
+  <%= image_tag @product.photo.url %>
+  <%= @product.price %>
+  <%= @product.description %>
+
+  <%= link_to "Edit", edit_product_path(@product) %>
+  <%= link_to "Back", products_path %>

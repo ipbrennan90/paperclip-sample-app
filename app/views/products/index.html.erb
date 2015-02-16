@@ -1,0 +1,15 @@
+<h1> Products List </h1>
+</br>
+<%= link_to "New Product", new_product_path %>
+</br>
+
+<%@products.each do |r| %>
+
+</br>
+
+<%= r.price %>
+<%= r.description %>
+<%= image_tag r.photo.url %>
+<%= link_to "Delete", product_path(r), method: :delete %> | <%= link_to "Edit", edit_product_path(r) %>
+</br>
+<% end %>
