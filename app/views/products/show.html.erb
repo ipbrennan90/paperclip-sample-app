@@ -1,6 +1,6 @@
 <h1> Product </h1>
 
-  <%= image_tag @product.photo.url %>
+  <%= image_tag @product.photo.url(:small) %>
   <%= @product.price %>
   <%= @product.description %>
 

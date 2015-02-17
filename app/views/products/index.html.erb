@@ -9,7 +9,7 @@
 
 <%= r.price %>
 <%= r.description %>
-<%= image_tag r.photo.url %>
+<%= image_tag r.photo.url(:small) %>
 <%= link_to "Delete", product_path(r), method: :delete %> | <%= link_to "Edit", edit_product_path(r) %>
 </br>
 <% end %>
